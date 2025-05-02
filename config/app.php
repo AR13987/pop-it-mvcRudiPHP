@@ -8,6 +8,9 @@ return [
         'required' => \Validators\RequireValidator::class,
         'unique' => \Validators\UniqueValidator::class
     ],
+    'routeAppMiddleware' => [
+        'trim' => \Middlewares\TrimMiddleware::class,
+    ],
     //Классы для middleware
     'routeMiddleware' => [
         'auth' => \Middlewares\AuthMiddleware::class,
